@@ -1,4 +1,4 @@
-package org.example.azure.Controller;
+package org.example.azure.controller;
 
 
 import org.example.azure.model.User;
