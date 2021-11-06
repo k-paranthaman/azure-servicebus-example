@@ -38,14 +38,6 @@ public class SwaggerConfig {
     @Value("${swagger.config.api.path}")
     private String swaggerPath;
 
-    @Value("${spring.jms.servicebus.connection-string}")
-    private String jmsConnectString;
-    @Value("${spring.jms.servicebus.idle-timeout}")
-    private String jmsTire;
-    @Value("${spring.jms.servicebus.pricing-tier}")
-    private String jmsTimeout;
-    @Value("${spring.jms.servicebus.topic-client-id}")
-    private String jmsTopiClintId;
 
     @Bean
     public Docket productApi() {
