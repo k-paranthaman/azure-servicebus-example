@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+swagger:
+  config:
+    api:
+      basepackage : org.example.azure.Controller
+      path : /.*
+api:
+  version : 1.0
+  description : Azure Service Bus Example Service
+  title : Azure service example
+
+spring:
+  jms:
+    servicebus:
+      connection-string: Endpoint=sb://demoservicebus1232.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Koe+siRhHsHNkZIny1Zr7Z5cRXsZN/JDKuR4G39yI24=
+      idle-timeout: 30000
+      pricing-tier: Standard
+      topic-client-id: salesperformancemessage
